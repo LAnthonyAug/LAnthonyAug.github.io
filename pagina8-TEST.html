@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test emocion dominante</title>
+    <link rel="stylesheet" href="estilos8.css">
+</head>
+<body>
+        <div class="intensamente-container">
+            <div class="intensamente-header"><br><br>
+                Intensamente <br><br><br>
+                Test de emocion dominante <br><br><br><br>
+            </div>
+            <div class="intensamente-body">
+                <div class="body active">
+                    <div class="form-control">
+                        <input type="value" required="" class="namee">
+                        <label>
+                            <span style="transition-delay:0ms">N</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">m</span><span style="transition-delay:150ms">b</span><span style="transition-delay:200ms">r</span><span style="transition-delay:250ms">e</span>
+                        </label>
+                    </div>
+                    <div class="textito">
+                        <span class="text">¿Te has preguntado cuál es la emoción que guía tu vida? Inspirados en "Intensamente" de Pixar, hemos creado un test para descubrir cuál de las cinco emociones principales - Alegría, Tristeza, Temor, Furia o Desagrado - domina en tu mente. Imagina tu cabeza como la sala de control de Riley, donde tus sentimientos y acciones se manejan. ¡Es hora de entrar en esa sala y ver quién está a cargo hoy!</span><br>
+                        <span class="text2">Este test es sencillo, divertido y revelador. Responde las siguientes preguntas con total honestidad y al final descubrirás qué emoción es la que más influye en ti.</span><br><br>
+                    </div>
+                    <button class="cta" id="start" onclick="showBody(1)">
+                        <span>Start Now</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                          <path d="M1,5 L11,5"></path>
+                          <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                      </button>
+                </div>
+                <div class="body">
+                    <label class="labeel">
+                        1. Cuando algo muy bueno sucede, como ganar un premio o recibir una gran noticia, tú:
+                    </label><br><br>
+                    <div class="radio-input-wrapper">
+                        <label class="label">
+                            <input value="alegría" name="q1" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Saltas de alegría y lo celebras con todos.</div>
+                        </label>
+                        <label class="label">
+                            <input value="temor" name="q1" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te sientes feliz, pero también reflexionas sobre lo que podría ir mal.</div>
+                        </label>
+                        <label class="label">
+                            <input value="tristeza" name="q1" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Estás contento, pero te preguntas si realmente lo mereces.</div>
+                        </label>
+                        <label class="label">
+                            <input value="furia" name="q1" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te enfadas si alguien minimiza tu logro.</div>
+                        </label>
+                        <label class="label">
+                            <input value="desagrado" name="q1" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te sientes bien, pero no te gusta hacer un gran alboroto.</div>
+                        </label>
+                    </div><br>
+                    <button class="button" onclick="showBody(2)">
+                        <span class="button-content">Siguiente </span>
+                    </button>
+                </div>
+                <div class="body">
+                    <label class="labeel">
+                        2. Si ves una película triste, tú:
+                    </label><br><br>
+                    <div class="radio-input-wrapper">
+                        <label class="label">
+                            <input value="alegría" name="q2" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te concentras en los momentos felices del final.</div>
+                        </label>
+                        <label class="label">
+                            <input value="temor" name="q2" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te preocupa que cosas similares puedan pasarte a ti.</div>
+                        </label>
+                        <label class="label">
+                            <input value="tristeza" name="q2" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Lloras y te sientes emocionalmente conmovido.</div>
+                        </label>
+                        <label class="label">
+                            <input value="furia" name="q2" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te molestas por la injusticia que sufren los personajes.</div>
+                        </label>
+                        <label class="label">
+                            <input value="desagrado" name="q2" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Prefieres no ver películas que te hagan sentir incómodo.</div>
+                        </label>
+                    </div><br>
+                    <button class="button" onclick="showPreviousBody()">
+                        <span class="button-content">Anterior </span>
+                    </button>
+                    <button class="button" onclick="showBody(3)">
+                        <span class="button-content">Siguiente </span>
+                    </button>
+                </div>
+                <div class="body">
+                    <label class="labeel">
+                        3. Cuando enfrentas un desafío importante, tú:
+                    </label><br><br>
+                    <div class="radio-input-wrapper">
+                        <label class="label">
+                            <input value="alegría" name="q3" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Lo ves como una oportunidad emocionante.</div>
+                        </label>
+                        <label class="label">
+                            <input value="temor" name="q3" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te preocupas por todas las cosas que podrían salir mal.</div>
+                        </label>
+                        <label class="label">
+                            <input value="tristeza" name="q3" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te sientes abrumado y te cuesta comenzar.</div>
+                        </label>
+                        <label class="label">
+                            <input value="furia" name="q3" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te enfadas con cualquier obstáculo que encuentras.</div>
+                        </label>
+                        <label class="label">
+                            <input value="desagrado" name="q3" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te desagrada tener que esforzarte tanto.</div>
+                        </label>
+                    </div><br>
+                    <button class="button" onclick="showPreviousBody()">
+                        <span class="button-content">Anterior </span>
+                    </button>
+                    <button class="button" onclick="showBody(4)">
+                        <span class="button-content">Siguiente </span>
+                    </button>
+                </div>
+                <div class="body">
+                    <label class="labeel">
+                        4. Cuando conoces a alguien nuevo, tú:
+                    </label><br><br>
+                    <div class="radio-input-wrapper">
+                        <label class="label">
+                            <input value="alegría" name="q4" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te muestras amistoso y tratas de hacer que se sienta bienvenido.</div>
+                        </label>
+                        <label class="label">
+                            <input value="temor" name="q4" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te sientes cauteloso y observas su comportamiento antes de confiar.</div>
+                        </label>
+                        <label class="label">
+                            <input value="tristeza" name="q4" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te entristeces si parece que no te presta atención.</div>
+                        </label>
+                        <label class="label">
+                            <input value="furia" name="q4" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te irritas si dice algo que consideras irrespetuoso.</div>
+                        </label>
+                        <label class="label">
+                            <input value="desagrado" name="q4" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Prefieres mantener cierta distancia hasta conocerlo mejor.</div>
+                        </label>
+                    </div><br>
+                    <button class="button" onclick="showPreviousBody()">
+                        <span class="button-content">Anterior </span>
+                    </button>
+                    <button class="button" onclick="showBody(5)">
+                        <span class="button-content">Siguiente </span>
+                    </button>
+                </div>
+                <div class="body">
+                    <label class="labeel">
+                        5. En una situación de mucho estrés, tú:
+                    </label><br><br>
+                    <div class="radio-input-wrapper">
+                        <label class="label">
+                            <input value="alegría" name="q5" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Buscas mantener el ánimo positivo y animar a los demás.</div>
+                        </label>
+                        <label class="label">
+                            <input value="temor" name="q5" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te sientes ansioso y te preocupas constantemente.</div>
+                        </label>
+                        <label class="label">
+                            <input value="tristeza" name="q5" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te sientes abrumado y necesitas tiempo para procesar.</div>
+                        </label>
+                        <label class="label">
+                            <input value="furia" name="q5" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te enojas y sientes que todo está en tu contra.</div>
+                        </label>
+                        <label class="label">
+                            <input value="desagrado" name="q5" class="radio-input" type="radio">
+                            <div class="radio-design"></div>
+                            <div class="label-text">Te sientes incómodo y prefieres alejarte.</div>
+                        </label>
+                    </div><br>
+                      <button class="button" onclick="showPreviousBody()">
+                        <span class="button-content">Anterior </span>
+                      </button>
+                      <button class="uiverse" onclick="showBody(6); calculateResult()">
+                        <div class="wrapper">
+                            <span>Termine</span>
+                            <div class="circle circle-12"></div>
+                            <div class="circle circle-11"></div>
+                            <div class="circle circle-10"></div>
+                            <div class="circle circle-9"></div>
+                            <div class="circle circle-8"></div>
+                            <div class="circle circle-7"></div>
+                            <div class="circle circle-6"></div>
+                            <div class="circle circle-5"></div>
+                            <div class="circle circle-4"></div>
+                            <div class="circle circle-3"></div>
+                            <div class="circle circle-2"></div>
+                            <div class="circle circle-1"></div>
+                        </div>
+                    </button>
+                </div>
+                <div class="body">
+                    <div class="lamp">
+                        <div class="lava-lamp">
+                      <div class="bubble"></div>
+                      <div class="bubble1"></div>
+                      <div class="bubble2"></div>
+                      <div class="bubble3"></div>
+                      <div class="bubble4"></div>
+                      <div class="bubble5"></div>
+                      <div class="bubble6"></div>
+                      <div class="bubble7"></div>
+                      <div class="bubble8"></div>
+                    </div>
+                </div>
+                <span class="insideout">Inside Out</span>
+                </div>
+                <div class="body">
+                    <!-- <div id="result" class="result"></div> -->
+                    <div class="card">
+                        <!-- <img src="tristeza.jpg.png" alt="Emoción dominante" id="imagen" style="display: none;"> -->
+                        <div class="card__content">
+                            <div class="inter-a"><br>
+                                <p class="card__title" id="result">La emoción que más te domina es: </p>
+                                <p class="card__description" id="textootito"></p>
+                            </div>
+                        </div>
+                        <div class="imganesita">
+                            <img src="https://i.postimg.cc/fLSZ6wB5/alegriaimg.jpg" alt="Emoción dominante" id="imagen1" style="display: none;">
+                            <img src="https://i.postimg.cc/MGNJ0CqB/tristezaimg.jpg" alt="Emoción dominante" id="imagen2" style="display: none;">
+                            <img src="https://i.postimg.cc/2jvrGSqS/desagradoimg.jpg" alt="Emoción dominante" id="imagen3" style="display: none;">
+                            <img src="https://i.postimg.cc/Fs4mBXcg/furiaimg.jpg" alt="Emoción dominante" id="imagen4" style="display: none;">
+                            <img src="https://i.postimg.cc/KYRyMGSF/temorimg.jpg" alt="Emoción dominante" id="imagen5" style="display: none;">
+                        </div>
+                    </div><br>
+                    <button class="card__button" onclick="refreshPage()">Rehacer</button>
+                    <button class="card__button secondary" onclick="redirectToPage()">Index</button>
+                </div>
+            </div>
+        </div>
+        
+    <script>
+        let currentIndex = 0;
+        
+        function showBody(index) {
+          const bodies = document.querySelectorAll('.body');
+          bodies.forEach((body, i) => {
+            if (i === index) {
+              body.classList.add('active');
+            } else {
+              body.classList.remove('active');
+            }
+          });
+          currentIndex = index;
+          if (index === 6) {
+            setTimeout(function() {
+                showBody(7);
+            }, 7000);
+          }
+        }
+    
+        function showPreviousBody() {
+          if (currentIndex > 0) {
+            showBody(currentIndex - 1);
+          } else {
+            showBody(document.querySelectorAll('.body').length - 1);
+          }
+        }
+
+        function calculateResult() {
+            const form = document.querySelector('.intensamente-body');
+            const answers = {};
+            for (let i = 1; i <= 5; i++) {
+                const answer = form.querySelector(`input[name=q${i}]:checked`);
+                if (answer) {
+                    const emotion = answer.value;
+                    if (answers[emotion]) {
+                        answers[emotion]++;
+                    } else {
+                        answers[emotion] = 1;
+                    }
+                }
+            }
+
+            let maxEmotion = null;
+            let maxCount = 0;
+            const imagen1 = document.getElementById('imagen1');
+            const imagen2 = document.getElementById('imagen2');
+            const imagen3 = document.getElementById('imagen3');
+            const imagen4 = document.getElementById('imagen4');
+            const imagen5 = document.getElementById('imagen5');
+            for (const emotion in answers) {
+                if (answers[emotion] > maxCount) {
+                    maxCount = answers[emotion];
+                    maxEmotion = emotion;
+                }
+            }
+            
+            const resultDiv = document.getElementById('textootito');
+            if (maxEmotion) {
+                resultDiv.innerHTML = `<strong>${maxEmotion}</strong>`;
+            } else {
+                resultDiv.innerHTML = 'Responda todas las preguntas.';
+            }
+
+            switch (maxEmotion) {
+                case 'alegría':
+                    imagen1.style.display="block";
+                    resultDiv.style.color="#eb9e2c";
+                    break;
+                case 'tristeza':
+                    imagen2.style.display="block";
+                    resultDiv.style.color="#316ad4";
+                    break;
+                case 'desagrado':
+                    imagen3.style.display="block";
+                    resultDiv.style.color="#419e49";
+                    break;
+                case 'furia':
+                    imagen4.style.display="block";
+                    resultDiv.style.color="#c51f1f";
+                    break;
+                case 'temor':
+                    imagen5.style.display="block";
+                    resultDiv.style.color="#6c44c9";
+                    break;
+            }
+
+        }
+        function refreshPage() {
+            setTimeout(function() {
+                location.reload();
+            }, 1000);
+        }
+    function redirectToPage() {
+      window.location.href = "pagina1-Index.html";
+    }
+    </script>
+</body>
+</html>

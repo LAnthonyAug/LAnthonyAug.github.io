@@ -1,0 +1,262 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  body {
+    background: radial-gradient(circle, #c7c0ece5, #fefeff, #c7cceb, #b8c3ff);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    display: grid;
+    place-items: center;
+}
+section {
+  display: flex;
+  width: 900px;
+  height: 530px;
+  border: 5px solid white;
+}
+section a {
+  width: 0;
+  flex-grow: 1;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: .9s ease;
+}
+section a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .9s ease;
+}
+section a:hover {
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(110%);
+}
+.esfrprinc
+{
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.esfrprinc::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+  animation: colorAnimation 3s infinite;
+  mix-blend-mode: overlay;
+}
+@keyframes colorAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.el1
+{
+  background: linear-gradient(45deg, #d3ac006e, #ffae006e);
+  top: 150px;
+  left: 45px;
+}
+.el2
+{
+  background: linear-gradient(45deg, #1286e66e, #1f588d6e);
+  bottom: 5px;
+  right: 20px;
+}
+.el3
+{
+  background: linear-gradient(45deg, #A3D28C6e, #6495576e);
+  top: -15px;
+  right: -10px;
+}
+.el4
+{
+  background: linear-gradient(45deg, #e22e2e6e, #aa14096e);
+  bottom: 20px;
+  left: -10px;
+}
+.el5
+{
+  background: linear-gradient(45deg, #732ee26e, #7250aa6e);
+  bottom: 50px;
+  right: 290px;
+}
+.el6
+{
+  background: linear-gradient(45deg, #e2702e6e, #aa57096e);
+  bottom: -25px;
+  left: 350px;
+}
+.esfrsec
+{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.esfrsec::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+  animation: colorAnimation 3s infinite;
+  mix-blend-mode: overlay;
+}
+.e1
+{
+  background: linear-gradient(45deg, #d3ac0041, #ffae0041);
+  top: 55px;
+  right: 450px;
+}
+.e2
+{
+  background: linear-gradient(45deg, #1286e66e, #1f588d6e);
+  top: 460px;
+  left: 195px;
+}
+.e3
+{
+  background: linear-gradient(45deg, #A3D28C41, #64955741);
+  bottom: 50px;
+  right: 750px;
+}
+.e4
+{
+  background: linear-gradient(45deg, #e22e2e41, #aa140941);
+  bottom: 450px;
+  right: 120px;
+}
+.e5
+{
+  background: linear-gradient(45deg, #732ee241, #7250aa41);
+  top: 150px;
+  left: 290px;
+}
+.e6
+{
+  background: linear-gradient(45deg, #e2702e41, #aa570941);
+  bottom: 300px;
+  right: 210px;
+}
+span
+{
+  display: block;
+  font-family: monospace;
+  font-size: 35px;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 22ch;
+  animation: typing 4s steps(22),
+              blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+@keyframes typing 
+{
+  from {
+    width: 0;
+    }
+}
+@keyframes blink 
+{
+  50% {
+    border-color: transparent;
+    }
+}
+
+
+button {
+  display: inline-block;
+  width: 150px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #03045e;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+  cursor: pointer;
+ }
+ 
+ button::before,
+ button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+ }
+ 
+ button::before {
+  left: -10px;
+  background: #240046;
+ }
+ 
+ button::after {
+  right: -10px;
+  background: #5a189a;
+ }
+ 
+ button:hover::before,
+ button:hover::after {
+  width: 58%;
+ }
+ 
+ button:hover span {
+  color: #e0aaff;
+  transition: 0.3s;
+ }
+ 
+ button span {
+  color: #03045e;
+  transition: all 0.3s ease-in;
+ }
+
+ @font-face {
+	font-family: 'ShadowHand';
+	src: url('//2ttf.com/webfont/UIswCwhB/webfont.ttf') format('truetype');
+}
+
+ a
+ {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'ShadowHand';
+ }
+ a:hover
+ {
+  color: white;
+}
+
+
+
+
+
+
+
